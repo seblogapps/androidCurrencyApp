@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Currency App</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="currency_times">
+        <item>Repeat every minute</item>
+        <item>Repeat every two minutes</item>
+        <item>Repeat every five minutes</item>
+        <item>Repeat every twenty minute</item>
+        <item>Repeat every hour</item>
+        <item>Repeat every day</item>
+        <item>Off</item>
+    </string-array>
+    <string name="currency_prompt">Select service frequency</string>
+    <string name="fab_visibility">FAB Visibility</string>
+    <string name="popup_menu_selection">Currency Selection</string>
+    <string name="popup_menu_cleardatabase">Clear Database</string>
+    <string name="popup_menu_show_graph">Show graph</string>
+    <string name="graph_tabledescription">Currency Exchange Rate: %1$s - %2$s</string>
+</resources>
