@@ -15,12 +15,11 @@ import com.example.stognacci.currencyapp.Constants;
 import com.example.stognacci.currencyapp.MainActivity;
 import com.example.stognacci.currencyapp.R;
 
+
 /**
  * Created by stognacci on 01/04/2016.
  */
 public class NotificationUtils {
-
-    public static final String LOG_TAG = NotificationUtils.class.getSimpleName();
 
     public static void showNotificationMessage(Context context, String title, String message) {
         if (TextUtils.isEmpty(message)) {

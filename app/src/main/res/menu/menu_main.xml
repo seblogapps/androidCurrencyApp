@@ -12,13 +12,13 @@
         android:id="@+id/activity_show_log"
         android:icon="@drawable/ic_keyboard_hide"
         android:orderInCategory="80"
-        android:title="Log Visibility"
+        android:title="@string/menu_logvisibility"
         app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/activity_clear_logs"
         android:icon="@drawable/ic_clear"
         android:orderInCategory="100"
-        android:title="Clear Logs"
+        android:title="@string/menu_clearlogs"
         app:showAsAction="ifRoom"/>
 </menu>

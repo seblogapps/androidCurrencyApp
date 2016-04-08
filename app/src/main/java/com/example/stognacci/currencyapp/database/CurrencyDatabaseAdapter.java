@@ -15,9 +15,9 @@ public class CurrencyDatabaseAdapter extends SQLiteOpenHelper {
 
     private static final String LOG_TAG = CurrencyDatabaseAdapter.class.getSimpleName();
 
-    public static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 1;
 
-    public static final String CURRENCY_TABLE_CREATE = "create table " +
+    private static final String CURRENCY_TABLE_CREATE = "create table " +
             Constants.CURRENCY_TABLE + " (" +
             Constants.KEY_ID + " integer primary key autoincrement, " +
             Constants.KEY_BASE + " text not null, " +

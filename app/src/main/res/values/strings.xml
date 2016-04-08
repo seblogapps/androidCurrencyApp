@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Currency App</string>
-    <string name="action_settings">Settings</string>
     <string-array name="currency_times">
         <item>Repeat every minute</item>
         <item>Repeat every two minutes</item>
@@ -16,4 +15,7 @@
     <string name="popup_menu_cleardatabase">Clear Database</string>
     <string name="popup_menu_show_graph">Show graph</string>
     <string name="graph_tabledescription">Currency Exchange Rate: %1$s - %2$s</string>
+    <string name="menu_logvisibility">Log Visibility</string>
+    <string name="menu_clearlogs">Clear Logs</string>
+    <string name="notification_title">Currency Exchange rate</string>
 </resources>

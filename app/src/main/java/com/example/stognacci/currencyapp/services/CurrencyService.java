@@ -20,7 +20,7 @@ import org.json.JSONObject;
  */
 public class CurrencyService extends IntentService {
 
-    public static final String LOG_TAG = CurrencyService.class.getSimpleName();
+    private static final String LOG_TAG = CurrencyService.class.getSimpleName();
 
     public CurrencyService(String name) {
         super(LOG_TAG);

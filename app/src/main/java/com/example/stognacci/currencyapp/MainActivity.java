@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity
                                         + currency.getName() + " = " + currency.getRate();
                                 LogUtils.log(LOG_TAG, dbLogMessage);
                                 NotificationUtils.showNotificationMessage(getApplicationContext(),
-                                        "Currency Exchange rate",
+                                        getString(R.string.notification_title),
                                         dbLogMessage);
                             }
                             if (LifeCycleUtils.isAppInBackground()) {
