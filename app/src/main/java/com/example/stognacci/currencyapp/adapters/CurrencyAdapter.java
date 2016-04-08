@@ -1,6 +1,7 @@
 package com.example.stognacci.currencyapp.adapters;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 
 import com.example.stognacci.currencyapp.Constants;
 import com.example.stognacci.currencyapp.R;
+import com.example.stognacci.currencyapp.utils.LifeCycleApp;
 
 /**
  * Created by stognacci on 04/04/2016.
@@ -37,6 +39,7 @@ public class CurrencyAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        Resources resources = LifeCycleApp.getAppResources();
         ViewHolder viewHolder = new ViewHolder();
         if(convertView == null) {
             LayoutInflater inflater = (LayoutInflater) mContext
@@ -47,7 +50,8 @@ public class CurrencyAdapter extends BaseAdapter {
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
-        viewHolder.textView.setText(String.format("%s (%s)", Constants.CURRENCY_NAMES[position], Constants.CURRENCY_CODES[position]));
+        //viewHolder.textView.setText(String.format("%s (%s)", Constants.CURRENCY_NAMES[position], Constants.CURRENCY_CODES[position]));
+        viewHolder.textView.setText(String.format("%s (%s)", resources.getStringArray(R.array.CURRENCY_NAMES)[position], Constants.CURRENCY_CODES[position]));
         return convertView;
     }
 
