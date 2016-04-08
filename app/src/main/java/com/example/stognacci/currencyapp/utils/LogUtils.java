@@ -4,6 +4,7 @@ import android.util.Log;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Locale;
 
 /**
  * Created by stognacci on 24/03/2016.
@@ -38,7 +39,7 @@ public class LogUtils {
     }
 
     private static String formatDate(Calendar calendar) {
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd MM hh:mm:ss");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd MM hh:mm:ss", Locale.ENGLISH);
         return simpleDateFormat.format(calendar.getTime());
     }
 
